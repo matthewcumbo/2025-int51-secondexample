@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- This title is what appears in the browser tab when a user is browsing our website. -->
+    <title>1st website - Home Page</title>
+    
+    <!-- We can link to a stylesheet which is included in our project to avoid having CSS as part of our HTML file. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- We can have generic styling rules for the whole page as shown here. -->
+    <style>
+        
+        p {
+            color:green;
+            font-style: italic;
+        }
+
+        
+    </style>
 </head>
 <body>
-    Hello world!
+    <!-- The <a> element is used for links, to allow the user to navigate from one page to another. -->
+    <a href="index.html">
+        Home Page
+    </a>
+    <a href="images.html">
+        Images
+    </a>
+    <a href="lists.html">
+        Lists
+    </a>
+
+    <!-- 
+        Headings can be created using the <h1> - <h6> elements, which are used to create a content hierarchy within our pages.
+        By default, they have their own styling, using font size to show this hierarchy level.
+    -->
+    <h1 style="color:red;">My first website!</h1>
+    
+    <!-- The <p> element is for Paragraph, the main text element in HTML. -->
+    <p>My first paragraph!</p>
+    <p>My 2nd par!</p>
+    <h2>Subtitle</h2>
+
+    <!-- 
+        Lorem Ipsum can be used to generate random text to fill up our page during development.
+        Simply type in 'lorem' and accept VS Code's suggestion.  
+    -->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor numquam, unde dolores corrupti ratione nihil impedit beatae excepturi eos, enim, voluptatibus tempore aut magni quam commodi nobis consequuntur alias eveniet.
+    </p>
+    <!-- lorem5 (or any other number) creates 5 words worth of lorem ipsum -->
+    <p>
+        Lorem ipsum dolor sit amet.
+    </p>
+    <!-- lorem*5 (again, any number) creates 5 lines worth of lorem ipsum -->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eaque quos temporibus quam illo suscipit, maiores facere sapiente? Dolor quia architecto non laudantium ipsam sit illum ut blanditiis necessitatibus voluptates.
+        Enim aliquam quaerat cum rerum corporis quae fugiat autem aut quis dolor laudantium quibusdam quidem labore dicta deleniti voluptates accusantium amet impedit nobis quos error, dolores, minima magni? Provident, perspiciatis.
+        Ab incidunt dolores recusandae amet sapiente odio ipsum aliquid, assumenda totam quasi sed consequuntur! Sit, libero pariatur. Nostrum, laudantium. Illo accusantium tempora deleniti sapiente. Voluptatem dolorem perferendis rerum veritatis vitae.
+        Impedit voluptate nihil corporis aliquid ratione praesentium eos, reiciendis ea, tempore, necessitatibus quasi accusamus doloremque commodi magnam odit dicta pariatur mollitia laudantium voluptas. Cupiditate expedita hic, facilis consequatur reiciendis magni!
+        Dolorum quaerat qui, consequatur laborum ratione labore similique possimus beatae adipisci laudantium assumenda praesentium fugit, nobis nostrum temporibus dolores deleniti atque eius ab voluptate aliquam nesciunt unde. A, laudantium quos!
+    </p>
+
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+    <h6>H6</h6>
 </body>
 </html>
