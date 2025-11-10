@@ -18,12 +18,36 @@ h1{
     color: #af680b;
 }
 
+
+
+
+.bigBox{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .lorem{
     color: #ccc;
     background-color: #3a3a3a;
+    order:2;
+    flex-grow: 4;
 }
 
 .lorem2{
     color: #ccc;
     background-color: #0f173a;
+    order:1;
+    flex-grow: 1;
+}
+
+.last{
+    order:3;
+    flex-grow: 1;
+}
+
+.secondBox{
+    display: flex;
+    justify-content: space-aroundx;
 }
