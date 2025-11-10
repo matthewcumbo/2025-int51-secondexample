@@ -1,6 +1,11 @@
 /*  
     This generic rule affects all H1 elements in pages linked to this CSS file
 */
+
+body{
+    background-color: #dcffff;
+}
+
 h1{
     color:#e04b7a;
 }
@@ -11,4 +16,14 @@ h1{
 
 .customH1{
     color: #af680b;
+}
+
+.lorem{
+    color: #ccc;
+    background-color: #3a3a3a;
+}
+
+.lorem2{
+    color: #ccc;
+    background-color: #0f173a;
 }
