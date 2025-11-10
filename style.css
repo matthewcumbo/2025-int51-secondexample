@@ -21,21 +21,57 @@ h1{
 
 
 
+
+
+/*
+    The Flex-Box system is used to efficiently layout a page, 
+    distributing its elements evenly, even when we don't know the sizes of these elements. 
+
+    A Good Source for Flex-Box is the following:
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
 .bigBox{
+    /* 
+        This property sets an element with this class as a flexbox container. 
+        By default, it sets the items inside to be side by side, resizing them if necessary.
+    */
     display: flex;
+
+    height: 800px;
+    
+    /* 
+        Flex-direction, by default, is row, meaning items inside a flexbox container are set side by side. 
+        Column sets them top to bottom. This switches the main and cross axis. 
+    */
     flex-direction:column;
+
+    /* 
+        Align-items aligns the items inside a container on the cross-axis (veritacally by default) when they do not fill up all the available space.
+    */
     align-items: center;
-    justify-content: space-around;
+    
+    /*
+        Justify-content aligns the items inside a container on the main-axis (horizontally by default) when they do not fill up all the available space.
+    */
+    justify-content: space-between;
 }
 
 .lorem{
+    max-height: 200px;
     color: #ccc;
     background-color: #3a3a3a;
+    /*
+        Order can be used to change the order of flex items in a container
+    */
     order:2;
+    /*
+        Flex-grow specifies how much an item grows in relation to others, when in a flexbox container
+    */
     flex-grow: 4;
 }
 
 .lorem2{
+    max-height: 200px;
     color: #ccc;
     background-color: #0f173a;
     order:1;
@@ -43,11 +79,22 @@ h1{
 }
 
 .last{
+    max-height: 200px;
     order:3;
     flex-grow: 1;
 }
 
 .secondBox{
+    background-color: #af680b;
     display: flex;
-    justify-content: space-aroundx;
+    justify-content: space-around;
+}
+
+.secondBoxP1{
+    padding: 10px;
+    background-color: #ccc;
+}
+.secondBoxP2{
+    padding: 10px;
+    background-color: #6b6b6b;
 }
