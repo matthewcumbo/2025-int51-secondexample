@@ -16,7 +16,8 @@
     height: 50px;
 }
 
-.timetable{
+.timetable div{
+    flex-grow: 1;
 }
 
 .header{
