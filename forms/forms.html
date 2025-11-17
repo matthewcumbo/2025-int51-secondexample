@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <h1>Forms</h1>
+
+    <!-- 
+        Forms are used to allow users to submit some data.
+        In this example, they will be able to submit data to their default Email software, such as Outlook.
+    
+        The form's 'action' shows where that data is sent. The 'method' is used to determine if we are getting or posting data (posting) in this case. The enctype is encoding type used for the submitted data, which determines how it is structured.
+    -->
+    <form 
+        action="mailto:asdf@qwerty.com"
+        method="POST"
+        enctype="text/plain">
+        <!-- Fieldsets are used to organise different groups of fields -->
+        <fieldset>
+            <!-- The legend is like a title for the fieldset -->
+            <legend>Personal Information</legend>
+            <div>
+                <!-- Labels are used to instruct the user what the field is for. The 'for' attribute links to an input's id and selects that input when the user clicks on the label. This enahnces the UX of the page, -->
+                <label for="firstName">First Name:</label>
+                <!-- The id and name of the input are very important. They are used for different features. For example, the id is used to link to the label, and the name is used to identify which part is submitted in the user's default email software. The placeholder is used to show an example of the user's submitted data. -->
+                <input type="text" id="firstName" name="firstName" placeholder="Joe">
+            </div>
+
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Borg">
+            </div>
+
+            <div>
+                <p>Age Group:</p>
+                <!-- Radio Buttons need to be grouped through the same name. This will set the group to only allow one to be selected. The value attribute will be used for the data to be submitted, linked to the name.  -->
+                <input type="radio" id="age1" name="age" value="1">
+                <label for="age1">15 - 18</label>
+                <br>
+
+                <input type="radio" id="age2" name="age" value="2">
+                <label for="age2">19 - 25</label>
+                <br>
+
+                <input type="radio" id="age3" name="age" value="3">
+                <label for="age3">26 - 40</label>
+                <br>
+
+                <input type="radio" id="age4" name="age" value="4">
+                <label for="age4">40 +</label>
+                <br>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Details</legend>
+
+            <div>
+                <!-- The email and tel types are used for validation upon form submission -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="joeborg@gmail.com">
+            </div>
+
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="1234 5678" pattern="[0-9]{4} [0-9]{4}">
+            </div>
+
+            <div>
+                <!-- If we have multiple checkboxes, the user will be able to select multiple options, since they are not grouped like radio buttons -->
+                <input type="checkbox" id="offers" name="offers">
+                <label for="offers">Contact me about offers</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Message Details</legend>
+
+            <div>
+                <label for="department">Department</label>
+                <!-- The Select element creates a drop down list. For each item in that list, we need an Option element. This works similarly to OL/UL. The value attribute of each Option is what is submitted in relation to the name of the Select. -->
+                <select name="department" id="department">
+                    <option value="" disabled selected>Please select a department</option>
+                    <option value="1">Customer Support</option>
+                    <option value="2">Techincal Support</option>
+                    <option value="3">Sales</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Please help!!">
+            </div>
+
+            <div>
+                <label for="message">Message:</label>
+                <!-- Textareas are used for text which is much longer than a short one like name, etc. This is used for posts, comments, contact forms, etc -->
+                <textarea name="message" id="message" placeholder="I have a problem with my account......." cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+
+        <div>
+            <!-- Different button types do different things upon clicking them. The reset and submit types are most commonly used with Forms. The button type is mostly used in conjuntion with JavaScript. -->
+            <button type="reset">Cancel</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
