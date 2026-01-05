@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <link rel="stylesheet" href="forms.css">
+    <script src="forms.js"></script>
 </head>
 <body>
     <h1>Forms</h1>
@@ -16,6 +17,7 @@
         The form's 'action' shows where that data is sent. The 'method' is used to determine if we are getting or posting data (posting) in this case. The enctype is encoding type used for the submitted data, which determines how it is structured.
     -->
     <form 
+        onsubmit="return validate();"
         action="mailto:asdf@qwerty.com"
         method="POST"
         enctype="text/plain">
@@ -109,5 +111,9 @@
             <button type="submit">Submit</button>
         </div>
     </form>
+
+    <div id="errorDiv" class="hidden">
+        <ul id="errorList"></ul>
+    </div>
 </body>
 </html>
