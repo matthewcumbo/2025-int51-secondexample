@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Intro</title>
+    <!-- <script src="jsIntro.js"></script> -->
+    <!-- <script src="oop.js"></script> -->
+    <script src="functions.js"></script>
+    <script src="lists.js"></script>
+</head>
+<body>
+    
+    <script>
+        // JS Basics
+        // We can output some text in the browser's console
+        // console.log("hello");
+        // We can also create a popup alert with some text 
+        //alert("hello world!")
+
+        // We can call a function from a JS file 
+        helloWorld();
+        helloWorld();
+        helloWorld();
+        helloWorld();
+        helloWorld();
+
+        // Some functions might require some value, called a parameter
+        helloUser("Matt");
+
+        // We can capture a function's returned value into a variable
+        // This variable can then be used for other things
+        let additionResult = add(1,2);
+        console.log(additionResult);
+        additionResult = add(additionResult, 7);
+        console.log(additionResult);
+
+    </script>
+
+    <!-- We can create HTML elements like buttons that call a JS function when interacted with -->
+    <button class="" onclick="hi('Matt');">Click Me!</button>
+
+
+
+</body>
+</html>
